@@ -1,0 +1,64 @@
+body {
+    background-color: #d6d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+h1 {
+    display: flex;
+    flex-direction:row ;
+    color: #0f0f0f;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#game-board {
+    background:#d6d4d4;
+    display: grid;
+    grid-template-columns: repeat(19, 40px);
+    grid-template-rows: repeat(16, 40px);
+    /*grid-gap: 2px;*/
+    justify-content: center;
+    overflow: hidden;
+    text-align: hidden;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 0px;
+}
+
+.tile-wall {
+    background: url(Wall.gif);
+    background-size: cover;
+    
+}
+
+.tile-space {
+    background: url(Space.gif);
+    background-size: cover;
+}
+
+.tile-goal {
+    background: url(Goal.gif);
+    background-size: cover;
+}
+
+.entity-player {
+    background: url(Player.gif);
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.entity-block {
+    background: url(Block.gif);
+    background-size: cover;
+}
+
+.entity-block-goal {
+    background: url(goal-block.gif);
+    background-size: cover;
+}
